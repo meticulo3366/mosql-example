@@ -20,6 +20,8 @@ To use [MoSQL](https://github.com/stripe/mosql) to replicate MongoDB documents i
 * Create `collections.yml`
 * Setup MongoDB for replication
     * `$ mongod --replSet meteor`
+        * If you receive an error here you may already have a replication instance running
+            * `$ sudo service mongodb stop`
     * `$ mongo`
         * `> var config = {_id: "meteor", members: [{_id: 0, host: "127.0.0.1:127017"}]}`
         * `> rs.initiate(config)`
