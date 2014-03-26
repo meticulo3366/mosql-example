@@ -6,4 +6,4 @@ if Meteor.isClient
       platform: "Austin.4+"
       version: 522.1
       grade: "A"
-  ), 100
+  ), 1000
