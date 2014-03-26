@@ -21,23 +21,23 @@ meteor:
       :table: pages
       :extra_props: true
   browsers:
-      :columns:
-      - id:
-        :source: _id
-        :type: TEXT
-      - engine:
-        :source: engine
-        :type: TEXT
-      - browser:
-        :source: browser
-        :type: TEXT
-      - version:
-        :source: version
-        :type: FLOAT
-      - grade:
-        :source: grade
-        :type: TEXT
-      - created: DOUBLE PRECISION
-      :meta:
-        :table: browsers
-        :extra_props: false
+    :columns:
+    - id:
+      :source: _id
+      :type: TEXT
+    - engine:
+      :source: engine
+      :type: TEXT
+    - browser:
+      :source: browser
+      :type: TEXT
+    - version:
+      :source: version
+      :type: FLOAT
+    - grade:
+      :source: grade
+      :type: TEXT
+    - created: DOUBLE PRECISION
+    :meta:
+      :table: browsers
+      :extra_props: false
