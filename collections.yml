@@ -1,0 +1,43 @@
+meteor:
+  pages:
+    :columns:
+    - id:
+      :source: _id
+      :type: TEXT
+    - route:
+      :source: route
+      :type: TEXT
+    - path:
+      :source: path
+      :type: TEXT
+    - page_title:
+      :source: page.title
+      :type: TEXT
+    - page_subtitle:
+      :source: page.subtitle
+      :type: TEXT
+    - created: DOUBLE PRECISION
+    :meta:
+      :table: pages
+      :extra_props: true
+  browsers:
+      :columns:
+      - id:
+        :source: _id
+        :type: TEXT
+      - engine:
+        :source: engine
+        :type: TEXT
+      - browser:
+        :source: browser
+        :type: TEXT
+      - version:
+        :source: version
+        :type: FLOAT
+      - grade:
+        :source: grade
+        :type: TEXT
+      - created: DOUBLE PRECISION
+      :meta:
+        :table: browsers
+        :extra_props: false
